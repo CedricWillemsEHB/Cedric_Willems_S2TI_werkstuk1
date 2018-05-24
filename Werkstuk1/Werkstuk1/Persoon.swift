@@ -12,15 +12,16 @@ class Persoon: NSObject {
 
     var naam : String
     var voornaam : String
-    var foto : String?
+    var foto : UIImage
     var adres : Adres
     var telefoonnummer : String
     var gps : String?
     
-    init(naam : String, voornaam : String, telefoonnummer: String, adres :Adres) {
+    init(naam : String, voornaam : String, telefoonnummer: String, adres :Adres, foto : UIImage) {
         self.naam = naam
         self.voornaam = voornaam
         self.telefoonnummer = telefoonnummer
         self.adres = adres
+        self.foto = foto
     }
 }
