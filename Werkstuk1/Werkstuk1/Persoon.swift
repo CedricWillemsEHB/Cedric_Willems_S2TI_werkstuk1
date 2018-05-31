@@ -15,13 +15,16 @@ class Persoon: NSObject {
     var foto : UIImage
     var adres : Adres
     var telefoonnummer : String
-    var gps : String?
+    var latitude : Double
+    var longitude : Double
     
-    init(naam : String, voornaam : String, telefoonnummer: String, adres :Adres, foto : UIImage) {
+    init(naam : String, voornaam : String, telefoonnummer: String, adres :Adres, foto : UIImage, latitude : Double, longitude : Double) {
         self.naam = naam
         self.voornaam = voornaam
         self.telefoonnummer = telefoonnummer
         self.adres = adres
         self.foto = foto
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }

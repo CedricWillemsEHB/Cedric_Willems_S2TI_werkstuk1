@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		567FA5A620C0011700AB6C9B /* LocatieAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FA5A520C0011700AB6C9B /* LocatieAnnotation.swift */; };
+		567FA5A820C0059600AB6C9B /* AllePersoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FA5A720C0059600AB6C9B /* AllePersoonViewController.swift */; };
 		568A2D3020AD8233005CA807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D2F20AD8233005CA807 /* AppDelegate.swift */; };
 		568A2D3220AD8233005CA807 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D3120AD8233005CA807 /* ViewController.swift */; };
 		568A2D3520AD8233005CA807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568A2D3320AD8233005CA807 /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		568A2D3D20AD8233005CA807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568A2D3B20AD8233005CA807 /* LaunchScreen.storyboard */; };
 		568A2D4820AD8233005CA807 /* Werkstuk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D4720AD8233005CA807 /* Werkstuk1Tests.swift */; };
 		568A2D5320AD8233005CA807 /* Werkstuk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D5220AD8233005CA807 /* Werkstuk1UITests.swift */; };
-		568A2D6120AD8730005CA807 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D6020AD8730005CA807 /* TableViewController.swift */; };
 		568A2D6520AD880A005CA807 /* Persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D6420AD880A005CA807 /* Persoon.swift */; };
 		568A2D6720AD887B005CA807 /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D6620AD887B005CA807 /* Adres.swift */; };
 		56F343CF20B6B71100C31707 /* PersoonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F343CE20B6B71100C31707 /* PersoonTableViewController.swift */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		567FA5A520C0011700AB6C9B /* LocatieAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatieAnnotation.swift; sourceTree = "<group>"; };
+		567FA5A720C0059600AB6C9B /* AllePersoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllePersoonViewController.swift; sourceTree = "<group>"; };
 		568A2D2C20AD8233005CA807 /* Werkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568A2D2F20AD8233005CA807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		568A2D3120AD8233005CA807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 		568A2D4E20AD8233005CA807 /* Werkstuk1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Werkstuk1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		568A2D5220AD8233005CA807 /* Werkstuk1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Werkstuk1UITests.swift; sourceTree = "<group>"; };
 		568A2D5420AD8233005CA807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		568A2D6020AD8730005CA807 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		568A2D6420AD880A005CA807 /* Persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
 		568A2D6620AD887B005CA807 /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
 		56F343CE20B6B71100C31707 /* PersoonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoonTableViewController.swift; sourceTree = "<group>"; };
@@ -117,10 +119,11 @@
 				568A2D3920AD8233005CA807 /* Assets.xcassets */,
 				568A2D6420AD880A005CA807 /* Persoon.swift */,
 				568A2D6620AD887B005CA807 /* Adres.swift */,
-				568A2D6020AD8730005CA807 /* TableViewController.swift */,
 				568A2D3B20AD8233005CA807 /* LaunchScreen.storyboard */,
 				568A2D3E20AD8233005CA807 /* Info.plist */,
 				568A2D3620AD8233005CA807 /* Werkstuk1.xcdatamodeld */,
+				567FA5A520C0011700AB6C9B /* LocatieAnnotation.swift */,
+				567FA5A720C0059600AB6C9B /* AllePersoonViewController.swift */,
 			);
 			path = Werkstuk1;
 			sourceTree = "<group>";
@@ -280,11 +283,12 @@
 				568A2D3220AD8233005CA807 /* ViewController.swift in Sources */,
 				568A2D3020AD8233005CA807 /* AppDelegate.swift in Sources */,
 				568A2D6520AD880A005CA807 /* Persoon.swift in Sources */,
+				567FA5A820C0059600AB6C9B /* AllePersoonViewController.swift in Sources */,
 				568A2D6720AD887B005CA807 /* Adres.swift in Sources */,
 				56F343CF20B6B71100C31707 /* PersoonTableViewController.swift in Sources */,
 				568A2D3820AD8233005CA807 /* Werkstuk1.xcdatamodeld in Sources */,
+				567FA5A620C0011700AB6C9B /* LocatieAnnotation.swift in Sources */,
 				56F343D120B6B79900C31707 /* PersoonTableViewCell.swift in Sources */,
-				568A2D6120AD8730005CA807 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
