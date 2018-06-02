@@ -8,13 +8,31 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class AllePersoonViewController: UIViewController,  MKMapViewDelegate {
+class AllePersoonViewController: UIViewController,  MKMapViewDelegate, CLLocationManagerDelegate {
     
     var personen : Array<Persoon> = []
-
+    
+    let manager = CLLocationManager()
+    
     @IBOutlet weak var AllePersoonMaps: MKMapView!
     var locationManager = CLLocationManager()
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations[0]
+        
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        AllePersoonMaps.setRegion(region, animated: true)
+        
+        self.AllePersoonMaps.showsUserLocation = true
+        let myAnnotation = LocatieAnnotation(coordinate: myLocation)
+        
+        AllePersoonMaps.addAnnotation(myAnnotation)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +48,11 @@ class AllePersoonViewController: UIViewController,  MKMapViewDelegate {
         let persoonprofiel2 = Persoon(naam : "Roselaar", voornaam : "Stijn", telefoonnummer: "04 77 69 98 13", adres : adres2, foto : photo2, latitude : 50.85321, longitude : 4.31758)
         let persoonprofiel3 = Persoon(naam : "Verstaeten", voornaam : "Cedric", telefoonnummer: "04 88 55 22 13", adres : adres3, foto : photo3,  latitude : 50.85543, longitude : 4.35591)
         personen = [persoonprofiel1, persoonprofiel2, persoonprofiel3]
+       
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
         
         for pers in personen {
             locationManager.requestAlwaysAuthorization()
