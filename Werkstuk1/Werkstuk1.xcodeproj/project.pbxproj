@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F51FF820C4859200C6A609 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F51FF720C4859200C6A609 /* CoreLocation.framework */; };
 		567FA5A620C0011700AB6C9B /* LocatieAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FA5A520C0011700AB6C9B /* LocatieAnnotation.swift */; };
 		567FA5A820C0059600AB6C9B /* AllePersoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FA5A720C0059600AB6C9B /* AllePersoonViewController.swift */; };
 		568A2D3020AD8233005CA807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A2D2F20AD8233005CA807 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40F51FF720C4859200C6A609 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		567FA5A520C0011700AB6C9B /* LocatieAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatieAnnotation.swift; sourceTree = "<group>"; };
 		567FA5A720C0059600AB6C9B /* AllePersoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllePersoonViewController.swift; sourceTree = "<group>"; };
 		568A2D2C20AD8233005CA807 /* Werkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F51FF820C4859200C6A609 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40F51FF620C4859100C6A609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40F51FF720C4859200C6A609 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		568A2D2320AD8233005CA807 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +104,7 @@
 				568A2D4620AD8233005CA807 /* Werkstuk1Tests */,
 				568A2D5120AD8233005CA807 /* Werkstuk1UITests */,
 				568A2D2D20AD8233005CA807 /* Products */,
+				40F51FF620C4859100C6A609 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
